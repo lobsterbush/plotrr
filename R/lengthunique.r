@@ -1,7 +1,7 @@
 #--- Length of unique values function --#
 #'@title Calculates the number of unique values in a vector
 #'@description Calculates the number of unique values in a vector.
-#'@author Charles Crabtree \email{ccrabtr@umich.edu}
+#'@author Charles Crabtree \email{charles.crabtree@monash.edu}
 #'@param x A vector.
 #'@return The number of unique values in a vector.
 #'@examples

@@ -20,5 +20,5 @@ x <- rep(c(1:10), 10)
 lengthunique(x)
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

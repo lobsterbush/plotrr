@@ -1,7 +1,7 @@
 #--- Histogram plots function ---#
 #'@title Creates histograms for a measure for each group/unit
 #'@description Returns histograms for a measure for each group/unit.
-#'@author Charles Crabtree \email{ccrabtr@umich.edu}
+#'@author Charles Crabtree \email{charles.crabtree@monash.edu}
 #'@param x A vector.
 #'@param y A vector.
 #'@param group A vector that contains unit/group identifiers.

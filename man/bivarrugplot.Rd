@@ -26,5 +26,5 @@ data <- data.frame(a, b)
 bivarrugplot("a", "b", data)
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

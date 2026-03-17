@@ -31,5 +31,5 @@ data <- data.frame(a, b, c)
 dotplots("a", "b", "c", data, 20)
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

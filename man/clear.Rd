@@ -16,5 +16,5 @@ Effectively clears the R terminal by filling it with whitespace.
 clear()
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

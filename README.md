@@ -1,5 +1,7 @@
-[![Build Status](https://travis-ci.org/cdcrabtree/plotrr.svg?branch=master)](https://travis-ci.org/cdcrabtree/plotrr) [![Build status](https://ci.appveyor.com/api/projects/status/github/cdcrabtree/plotrr?svg=true)](https://ci.appveyor.com/api/projects/status/github/cdcrabtree/) ![](http://www.r-pkg.org/badges/version/plotrr) ![](http://cranlogs.r-pkg.org/badges/grand-total/plotrr) ![](http://cranlogs.r-pkg.org/badges/plotrr) [![DOI](https://zenodo.org/badge/80883292.svg)](https://zenodo.org/badge/latestdoi/80883292) [![status](http://joss.theoj.org/papers/4f707062d9621de3b7009a2ad62cc8cc/status.svg)](http://joss.theoj.org/papers/4f707062d9621de3b7009a2ad62cc8cc) [![Rdoc](http://www.rdocumentation.org/badges/version/plotrr)](http://www.rdocumentation.org/packages/plotrr)
-
+[![CRAN status](https://www.r-pkg.org/badges/version/plotrr)](https://CRAN.R-project.org/package=plotrr)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/plotrr)](https://CRAN.R-project.org/package=plotrr)
+[![DOI](https://zenodo.org/badge/80883292.svg)](https://zenodo.org/badge/latestdoi/80883292)
+[![JOSS](https://joss.theoj.org/papers/10.21105/joss.00190/status.svg)](https://doi.org/10.21105/joss.00190)
 
 # plotrr: Functions for Making Visual Exploratory Data Analysis with Nested Data Easier.
 
@@ -16,17 +18,22 @@ In addition to these functions, the package also includes `histplots`, which cre
 Finally, the package also contains several "helper," or convenience, functions. `clear` effectively clears the R terminal. `lengthunique` calculates the number of uniques values in a vector. `makefacnum` converts factor vectors numeric vectors.
 
 ## Package Installation
-The latest development version (1.0.0) is on GitHub can be installed using devtools.
 
+Install the stable version from CRAN:
+
+```r
+install.packages("plotrr")
 ```
-if(!require("ghit")){
-    install.packages("ghit")
-}
-ghit::install_github("cdcrabtree/nomine")
+
+Or install the development version from GitHub:
+
+```r
+if (!require("remotes")) install.packages("remotes")
+remotes::install_github("cdcrabtree/plotrr")
 ```
 
 ## Support or Contact
-Please use the issue tracker for problems, questions, or feature requests. If you would rather email with questions or comments, you can contact [Charles Crabtree](mailto:ccrabtr@umich.edu) and he will address the issue.
+Please use the [issue tracker](https://github.com/cdcrabtree/plotrr/issues) for problems, questions, or feature requests. If you would rather email with questions or comments, you can contact [Charles Crabtree](mailto:charles.crabtree@monash.edu).
 
 If you would like to contribute to the package, that is great! We welcome pull requests and new developers.
 
@@ -34,7 +41,7 @@ If you would like to contribute to the package, that is great! We welcome pull r
 To test the software, users and potential contributors can use the example code provided in the documentation for each function.
 
 ## Thanks
-Thanks to [Karl Broman](https://github.com/kbroman) and [Hadley Wickham](http://hadley.nz/) for providing excellent free guies to building R packages.
+Thanks to [Karl Broman](https://github.com/kbroman) and [Hadley Wickham](https://hadley.nz/) for providing excellent free guides to building R packages.
 
 ### References
 - Trochim, William M. K., and James P. Donnelly. 2008. _Research Methods Knowledge Base_. New York, NY: Cengage Learning.

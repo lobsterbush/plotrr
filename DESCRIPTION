@@ -1,19 +1,20 @@
 Package: plotrr
 Type: Package
 Title: Making Visual Exploratory Data Analysis with Nested Data Easier
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(person("Charles", "Crabtree", role = c("aut", "cre"),
-                     email = "ccrabtr@umich.edu"),
+                     email = "charles.crabtree@monash.edu"),
               person("Michael J.", "Nelson", role = c("aut")))
-Description: Functions for making visual exploratory data analysis with nested data easier.
+Description: Functions for making visual exploratory data analysis with nested
+    data easier. Includes functions for creating bivariate plots, dot plots,
+    histograms, and violin plots for each group or unit in nested data.
 License: MIT + file LICENSE
 Encoding: UTF-8
-LazyData: true
 Imports:
-    ggplot2,
-    dplyr,
-    stats
-RoxygenNote: 6.0.1
+    ggplot2
+RoxygenNote: 7.3.3
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
+URL: https://github.com/cdcrabtree/plotrr
+BugReports: https://github.com/cdcrabtree/plotrr/issues

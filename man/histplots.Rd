@@ -31,5 +31,5 @@ data <- data.frame(a, b, c)
 histplots("a", "b", "c", data, 5)
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

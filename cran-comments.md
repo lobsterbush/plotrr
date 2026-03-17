@@ -1,15 +1,19 @@
 ## Resubmission
-This is a resubmission. In this version I have:
+This is a resubmission. The package was archived on 2023-11-01 because
+issues were not corrected in time. All previously flagged issues have
+been addressed:
 
-* Fixed a missing link in the README.MD file.
+* Removed unused `dplyr` and `stats` from Imports.
+* Removed `LazyData: true` (package has no data directory).
+* Updated maintainer email.
+* Updated roxygen2 documentation.
+* Fixed stale URLs in vignette and README.
 
 ## Test environments
-* local OS X install
-* ubuntu 12.04 (on travis-ci)
-* Visual Studio 2015 (on appveyor)
+* macOS Sonoma 14.6.1 (aarch64), R 4.5.2
 
 ## R CMD check results
-There were no ERRORs, WARNINGs or NOTEs.
+0 errors | 0 warnings | 2 notes
 
-## Downstream dependencies
-I have also run R CMD check on downstream dependencies of plotrr with devtools::revdep_check(). All packages that I could install passed.
+* NOTE: New submission / package was archived on CRAN.
+* NOTE: HTML validation skipped due to local HTML Tidy version.

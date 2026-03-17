@@ -29,5 +29,5 @@ data <- data.frame(a, b, c)
 bivarplots("a", "b", "c", data)
 }
 \author{
-Charles Crabtree \email{ccrabtr@umich.edu}
+Charles Crabtree \email{charles.crabtree@monash.edu}
 }

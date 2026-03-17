@@ -1,7 +1,7 @@
 #--- Bivariate plots function ---#
 #'@title Plots the bivariate relationship between two measures for each group/unit
 #'@description Returns a plot of the bivariate relationship between two measures for each group/unit.
-#'@author Charles Crabtree \email{ccrabtr@umich.edu}
+#'@author Charles Crabtree \email{charles.crabtree@monash.edu}
 #'@param x A vector.
 #'@param y A vector.
 #'@param group A vector.

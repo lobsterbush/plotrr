@@ -1,7 +1,7 @@
 #--- Violin plots function ---#
 #'@title Creates violin plots for the relationship between two measures for each group/unit
 #'@description Returns violin plots for the relationship between two measures for each group/unit.
-#'@author Charles Crabtree \email{ccrabtr@umich.edu}
+#'@author Charles Crabtree \email{charles.crabtree@monash.edu}
 #'@param x A vector.
 #'@param y A vector.
 #'@param group A vector that contains unit/group identifiers.
