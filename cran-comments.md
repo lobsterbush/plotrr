@@ -1,19 +1,17 @@
-## Resubmission
-This is a resubmission. The package was archived on 2023-11-01 because
-issues were not corrected in time. All previously flagged issues have
-been addressed:
+## R CMD check results
 
-* Removed unused `dplyr` and `stats` from Imports.
-* Removed `LazyData: true` (package has no data directory).
-* Updated maintainer email.
-* Updated roxygen2 documentation.
-* Fixed stale URLs in vignette and README.
+0 errors | 0 warnings | 0 notes
 
 ## Test environments
-* macOS Sonoma 14.6.1 (aarch64), R 4.5.2
 
-## R CMD check results
-0 errors | 0 warnings | 2 notes
+* local macOS (aarch64-apple-darwin20), R 4.5.2
 
-* NOTE: New submission / package was archived on CRAN.
-* NOTE: HTML validation skipped due to local HTML Tidy version.
+## Notes
+
+This is a resubmission. The package was previously archived on CRAN.
+All issues have been addressed: removed unused imports, updated
+maintainer email, fixed stale URLs.
+
+## Downstream dependencies
+
+None.
