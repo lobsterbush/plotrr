@@ -8,9 +8,10 @@
 
 ## Notes
 
-This is a resubmission. The package was previously archived on CRAN.
-All issues have been addressed: removed unused imports, updated
-maintainer email, fixed stale URLs.
+This is a resubmission addressing reviewer feedback:
+- Description no longer starts with "Functions for"
+- Added JOSS paper reference with DOI to DESCRIPTION
+- Added \value documentation to clear.Rd
 
 ## Downstream dependencies
 
