@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 inst/doc
+*.tar.gz
+*.Rcheck/
+CRAN-SUBMISSION

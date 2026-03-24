@@ -10,3 +10,5 @@
 ^License\.md$
 ^NEWS\.md$
 ^WARP\.md$
+^CRAN-SUBMISSION$
+^\.github$
