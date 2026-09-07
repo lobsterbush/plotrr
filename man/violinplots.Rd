@@ -2,24 +2,24 @@
 % Please edit documentation in R/violinplots.r
 \name{violinplots}
 \alias{violinplots}
-\title{Creates violin plots for the relationship between two measures for each group/unit}
+\title{Draw violin plots within each group}
 \usage{
 violinplots(x, y, group, data)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{The name of the x column, as a string.}
 
-\item{y}{A vector.}
+\item{y}{The name of the y column, as a string.}
 
-\item{group}{A vector that contains unit/group identifiers.}
+\item{group}{The name of the grouping column, as a string.}
 
 \item{data}{A data frame.}
 }
 \value{
-Violin plots for the relationship between two measures for each group/unit.
+Prints one plot per group. The function returns NULL invisibly.
 }
 \description{
-Returns violin plots for the relationship between two measures for each group/unit.
+Draws the distribution of y across values of x, separately for each group.
 }
 \examples{
 a <- runif(1000, min = 0, max = 1)

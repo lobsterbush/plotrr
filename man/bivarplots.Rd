@@ -2,24 +2,24 @@
 % Please edit documentation in R/bivarplots.r
 \name{bivarplots}
 \alias{bivarplots}
-\title{Plots the bivariate relationship between two measures for each group/unit}
+\title{Plot two variables within each group}
 \usage{
 bivarplots(x, y, group, data)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{The name of the x column, as a string.}
 
-\item{y}{A vector.}
+\item{y}{The name of the y column, as a string.}
 
-\item{group}{A vector.}
+\item{group}{The name of the grouping column, as a string.}
 
 \item{data}{A data frame.}
 }
 \value{
-A series of figures that plot the bivariate relationship between two measures for each group/unit.
+Prints one plot per group. The function returns NULL invisibly.
 }
 \description{
-Returns a plot of the bivariate relationship between two measures for each group/unit.
+Draws a scatterplot with a smooth curve for each group. Use it to see how the relationship varies across groups.
 }
 \examples{
 a <- runif(1000, min = 0, max = 1)

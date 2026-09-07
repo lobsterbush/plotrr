@@ -2,26 +2,26 @@
 % Please edit documentation in R/dotplots.r
 \name{dotplots}
 \alias{dotplots}
-\title{Creates histograms for a measure for each group/unit}
+\title{Draw a dot plot for each group}
 \usage{
 dotplots(x, y, group, data, n)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{The name of the x column, as a string.}
 
-\item{y}{A vector.}
+\item{y}{Kept for compatibility; this function doesn't use it.}
 
-\item{group}{A vector that contains unit/group identifiers.}
+\item{group}{The name of the grouping column, as a string.}
 
 \item{data}{A data frame.}
 
-\item{n}{The number of bins. Some experimentation with this number might be necessary.}
+\item{n}{Sets the bin width to 1/n. Try a few values to find a useful level of detail.}
 }
 \value{
-Historgrams for a measure for each group/unit.
+Prints one dot plot per group. The function returns NULL invisibly.
 }
 \description{
-Returns histograms for a measure for each group/unit.
+Draws the distribution of x separately for each group.
 }
 \examples{
 a <- runif(1000, min = 0, max = 1)

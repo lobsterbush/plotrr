@@ -1,12 +1,12 @@
 #--- Violin plots function ---#
-#'@title Creates violin plots for the relationship between two measures for each group/unit
-#'@description Returns violin plots for the relationship between two measures for each group/unit.
+#'@title Draw violin plots within each group
+#'@description Draws the distribution of y across values of x, separately for each group.
 #'@author Charles Crabtree \email{charles.crabtree@monash.edu}
-#'@param x A vector.
-#'@param y A vector.
-#'@param group A vector that contains unit/group identifiers.
+#'@param x The name of the x column, as a string.
+#'@param y The name of the y column, as a string.
+#'@param group The name of the grouping column, as a string.
 #'@param data A data frame.
-#'@return Violin plots for the relationship between two measures for each group/unit.
+#'@return Prints one plot per group. The function returns NULL invisibly.
 #'@examples
 #'a <- runif(1000, min = 0, max = 1)
 #'b <- a + rnorm(1000, mean = 0, sd = 1)

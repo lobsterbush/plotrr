@@ -2,7 +2,7 @@
 % Please edit documentation in R/makefacnum.r
 \name{makefacnum}
 \alias{makefacnum}
-\title{Converts factor vectors to numeric vectors}
+\title{Convert numeric factor labels to numbers}
 \usage{
 makefacnum(x)
 }
@@ -13,7 +13,7 @@ makefacnum(x)
 A numeric vector.
 }
 \description{
-Converts factor vectors to numeric vectors.
+Convert numeric factor labels to numbers.
 }
 \examples{
 x <- c("1", "2", "3")

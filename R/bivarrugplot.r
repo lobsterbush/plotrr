@@ -1,11 +1,11 @@
 #--- Bivariate plot with rugplot function ---#
-#'@title Plots the bivariate relationship between two measures and a rugplot for each measure
-#'@description Returns a plot of the bivariate relationship between two measures with a rugplot for each measure.
+#'@title Draw a scatterplot with marginal rugs
+#'@description Draws a scatterplot and adds marks along each axis at the observed values.
 #'@author Charles Crabtree \email{charles.crabtree@monash.edu}
-#'@param x A vector.
-#'@param y A vector.
+#'@param x The name of the x column, as a string.
+#'@param y The name of the y column, as a string.
 #'@param data A data frame.
-#'@return A plot of the bivariate relationship between two measures with a rugplot for each measure.
+#'@return Prints the plot and returns the ggplot object invisibly.
 #'@examples
 #'a <- runif(1000, min = 0, max = 1)
 #'b <- a + rnorm(1000, mean = 0, sd = 1)

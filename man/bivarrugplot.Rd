@@ -2,22 +2,22 @@
 % Please edit documentation in R/bivarrugplot.r
 \name{bivarrugplot}
 \alias{bivarrugplot}
-\title{Plots the bivariate relationship between two measures and a rugplot for each measure}
+\title{Draw a scatterplot with marginal rugs}
 \usage{
 bivarrugplot(x, y, data)
 }
 \arguments{
-\item{x}{A vector.}
+\item{x}{The name of the x column, as a string.}
 
-\item{y}{A vector.}
+\item{y}{The name of the y column, as a string.}
 
 \item{data}{A data frame.}
 }
 \value{
-A plot of the bivariate relationship between two measures with a rugplot for each measure.
+Prints the plot and returns the ggplot object invisibly.
 }
 \description{
-Returns a plot of the bivariate relationship between two measures with a rugplot for each measure.
+Draws a scatterplot and adds marks along each axis at the observed values.
 }
 \examples{
 a <- runif(1000, min = 0, max = 1)

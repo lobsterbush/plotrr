@@ -2,7 +2,7 @@
 % Please edit documentation in R/clear.r
 \name{clear}
 \alias{clear}
-\title{(Effectively) clears R terminal}
+\title{Clear the console display}
 \usage{
 clear(...)
 }
@@ -15,7 +15,7 @@ No return value (called for side effect of printing a form feed
  \code{NULL} invisibly.
 }
 \description{
-Effectively clears the R terminal by filling it with whitespace.
+Prints a form-feed character. Whether this clears the display depends on your console.
 }
 \examples{
 clear()

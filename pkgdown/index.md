@@ -2,9 +2,9 @@
 
 <div class="repllm-hero">
 <p class="eyebrow">Research software · R package</p>
-<p class="hero-title">Explore the groups.<br>See the structure.</p>
-<p class="hero-summary">Visual exploratory data analysis for nested and hierarchical data.</p>
-<p class="hero-links"><a class="hero-primary" href="#quick-start">Get started ↗</a><a href="reference/index.html">Explore the reference →</a></p>
+<p class="hero-title">Look within groups.</p>
+<p class="hero-summary">We built plotrr to help inspect relationships within groups before fitting a model to the pooled data.</p>
+<p class="hero-links"><a class="hero-primary" href="#quick-start">Get started ↗</a><a href="reference/index.html">See the functions →</a></p>
 <p class="hero-meta">Charles Crabtree and Michael J. Nelson</p>
 </div>
 
@@ -26,8 +26,9 @@ For the development version, use `remotes::install_github("lobsterbush/plotrr")`
 
 ## Explore within groups
 
-Pooled relationships can hide variation between groups. plotrr produces a
-separate plot for each group so you can inspect that structure before modelling.
+A relationship in the whole sample can look different within a country or
+school. We use these plots to see which groups follow the pattern and which
+ones need a closer look.
 
 | Task | Function |
 | --- | --- |
@@ -45,9 +46,9 @@ several plots print each plot in turn; consult the reference for each signature.
 
 **Human – AI (editor) 👤✏️🤖**
 
-All initial versions were created entirely by the human authors, without AI.
-AI was used only for subsequent updates and code fixes. This provenance
-declaration is supplied by Charles Crabtree.
+We wrote every initial version ourselves, without AI. We've used AI only for
+later updates and code fixes. I'm Charles Crabtree, and this is my account of
+how the package was made.
 
 The label and mark follow [The Latent Review’s provenance standard](https://thelatentreview.com/provenance/),
 shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -55,6 +56,6 @@ The software remains MIT licensed.
 
 ## Help and development
 
-Report bugs or request features in the [issue tracker](https://github.com/lobsterbush/plotrr/issues).
+If something isn't working, please tell us in the [issue tracker](https://github.com/lobsterbush/plotrr/issues).
 The [source and README](https://github.com/lobsterbush/plotrr) include installation
 requirements and local documentation build instructions.

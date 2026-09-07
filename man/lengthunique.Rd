@@ -2,7 +2,7 @@
 % Please edit documentation in R/lengthunique.r
 \name{lengthunique}
 \alias{lengthunique}
-\title{Calculates the number of unique values in a vector}
+\title{Count distinct non-missing values}
 \usage{
 lengthunique(x)
 }
@@ -10,10 +10,10 @@ lengthunique(x)
 \item{x}{A vector.}
 }
 \value{
-The number of unique values in a vector.
+The number of distinct values after removing missing values.
 }
 \description{
-Calculates the number of unique values in a vector.
+Count distinct non-missing values.
 }
 \examples{
 x <- rep(c(1:10), 10)

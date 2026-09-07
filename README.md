@@ -9,19 +9,31 @@
 
 [Package documentation](https://lobsterbush.github.io/plotrr/) · [Function reference](https://lobsterbush.github.io/plotrr/reference/index.html)
 
-Social scientists can improve their research by conducting exploratory data analysis (EDA) (Tukey 1977). The benefits of EDA include: ''maximiz[ing] insight into a data set; uncover[ing] underlying structure; extract[ing] important variables; detect[ing] outliers and anomalies; test[ing] underlying assumptions; develop[ing] parsimonious models; and determin[ing] optimal factor settings'' (NIST/SEMATECH 2012). Despite these benefits, scholars infrequently conduct EDA. One possible explanation for this is because it takes additional time to do so; it is often easier to move straight to confirmatory analysis.  
+We built `plotrr` to make it easier to look at relationships within groups.
+A pattern in pooled data can look quite different when you examine each
+country, school, or respondent separately.
 
-The time concern is particularly an issue for researchers who use nested data. The issue here is that most existing EDA software routines visualize relationships based on the pooled data. Few existing functions help scholars _easily_ visualize relationships within groups/units. 
+Exploratory data analysis helps us see what our data contain before fitting a
+model (Tukey 1977). It can reveal unusual observations and assumptions that
+need another look (NIST/SEMATECH 2012). With nested data, we want to do that
+within groups as well as across the whole sample.
 
-plotrr helps address this issue by providing several functions that make visual EDA easier to conduct.  The focus of many of the package's functions is to create plots that can help researchers explore relationships within nested data. Among other things, these functions can help scholars assess the extent to which expected relationships between variables occur in specific cases. `bivarplots` creates a bivariate plot for every group/unit in the data, `dotplots` creates a dot plot for every group/unit, and `violinplots` creates a violin plot for every group/unit. 
+As demonstrated in Crabtree and Nelson (2017), these plots can help us assess
+whether the relationships we expect appear in particular cases. They give us
+something concrete to investigate; they don't establish a causal explanation.
 
-As demonstrated in Crabtree and Nelson (2017), creating and interpreting plots like this this can help scholars find initial support for their theoretical expectations prior to conducting analysis with pooled data. The intuition here is that researchers can check their initial priors about relationships within cases. When the data support those priors, scholars have some additional evidence that the processes they theorize actually occur in the real world.
+`bivarplots()` draws a scatterplot for each group. `histplots()` and
+`dotplots()` show a variable's distribution within each group, while
+`violinplots()` compares distributions across values of another variable.
+`bivarrugplot()` adds marks along the axes to show where observations lie.
 
-In addition to these functions, the package also includes `histplots`, which creates histograms of a measure for each group/unit, and `bivarrugplot`, which returns a plot of the bivariate relationship between two measures alongside a rugplot of each measure.
+The package also includes a few small helpers. `lengthunique()` counts distinct
+non-missing values, `makefacnum()` converts numeric factor labels to numbers,
+and `clear()` prints a form-feed character to the console.
 
-Finally, the package also contains several "helper," or convenience, functions. `clear` effectively clears the R terminal. `lengthunique` calculates the number of uniques values in a vector. `makefacnum` converts factor vectors numeric vectors.
+Authors: Charles Crabtree and Michael J. Nelson.
 
-## Package Installation
+## Installation
 
 Install the stable version from CRAN:
 
@@ -36,13 +48,13 @@ if (!require("remotes")) install.packages("remotes")
 remotes::install_github("lobsterbush/plotrr")
 ```
 
-## Support or Contact
+## Help and contributions
 Please use the [issue tracker](https://github.com/lobsterbush/plotrr/issues) for problems, questions, or feature requests. If you would rather email with questions or comments, you can contact [Charles Crabtree](mailto:charles.crabtree@monash.edu).
 
-If you would like to contribute to the package, that is great! We welcome pull requests and new developers.
+We welcome pull requests. If you're unsure where to start, open an issue and tell us what you'd like to change.
 
 ## Tests
-To test the software, users and potential contributors can use the example code provided in the documentation for each function.
+Start with the examples in the function help. They use simulated data, so you can run them without downloading a dataset.
 
 ## Thanks
 Thanks to [Karl Broman](https://github.com/kbroman) and [Hadley Wickham](https://hadley.nz/) for providing excellent free guides to building R packages.
@@ -57,9 +69,9 @@ Browse the [documentation and function reference](https://lobsterbush.github.io/
 
 **Human – AI (editor) 👤✏️🤖**
 
-All initial versions were created entirely by the human authors, without AI.
-AI was used only for subsequent updates and code fixes. This provenance
-declaration is supplied by Charles Crabtree.
+We wrote every initial version ourselves, without AI. We've used AI only for
+later updates and code fixes. I'm Charles Crabtree, and this is my account of
+how the package was made.
 
 The label follows [The Latent Review’s provenance standard](https://thelatentreview.com/provenance/),
 shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
@@ -75,4 +87,4 @@ source(here::here("data-raw", "01_build_site.R"))
 ```
 
 The site is built locally in `docs/`. Publish the rendered contents to the
-`gh-pages` branch; GitHub Pages serves that branch. No Actions workflow is needed.
+`gh-pages` branch; GitHub Pages serves that branch.

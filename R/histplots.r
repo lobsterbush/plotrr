@@ -1,13 +1,13 @@
 #--- Histogram plots function ---#
-#'@title Creates histograms for a measure for each group/unit
-#'@description Returns histograms for a measure for each group/unit.
+#'@title Draw a histogram for each group
+#'@description Draws the distribution of x separately for each group.
 #'@author Charles Crabtree \email{charles.crabtree@monash.edu}
-#'@param x A vector.
-#'@param y A vector.
-#'@param group A vector that contains unit/group identifiers.
+#'@param x The name of the x column, as a string.
+#'@param y Kept for compatibility; this function doesn't use it.
+#'@param group The name of the grouping column, as a string.
 #'@param data A data frame.
 #'@param n The number of bins.
-#'@return Historgrams for a measure for each group/unit.
+#'@return Prints one histogram per group. The function returns NULL invisibly.
 #'@examples
 #'a <- runif(1000, min = 0, max = 1)
 #'b <- a + rnorm(1000, mean = 0, sd = 1)

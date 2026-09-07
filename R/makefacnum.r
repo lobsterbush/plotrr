@@ -1,6 +1,6 @@
 #--- Convert factor to numeric function ---#
-#'@title Converts factor vectors to numeric vectors
-#'@description Converts factor vectors to numeric vectors.
+#'@title Convert numeric factor labels to numbers
+#'@description Convert numeric factor labels to numbers.
 #'@author Charles Crabtree \email{charles.crabtree@monash.edu}
 #'@param x A vector.
 #'@return A numeric vector.
