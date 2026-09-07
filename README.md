@@ -1,4 +1,4 @@
-[![plotrr: Human > AI 👤>🤖](man/figures/provenance.svg)](https://thelatentreview.com/provenance/)
+[![plotrr: Human – AI (editor) 👤✏️🤖](man/figures/provenance.svg)](https://thelatentreview.com/provenance/)
 
 [![CRAN status](https://www.r-pkg.org/badges/version/plotrr)](https://CRAN.R-project.org/package=plotrr)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/plotrr)](https://CRAN.R-project.org/package=plotrr)
@@ -53,9 +53,12 @@ Thanks to [Karl Broman](https://github.com/kbroman) and [Hadley Wickham](https:/
 
 Browse the [documentation and function reference](https://lobsterbush.github.io/plotrr/).
 
-**Human > AI 👤>🤖** — declared by Charles Crabtree: human led, with meaningful
-AI contributions to the work and ideas. This declaration covers the package
-and its documentation; the documentation build used OpenAI Codex.
+**Human – AI (editor) 👤✏️🤖**
+
+All initial versions were created entirely by the human authors, without AI.
+AI was used only for subsequent updates and code fixes. This provenance
+declaration is supplied by Charles Crabtree.
+
 The label follows [The Latent Review’s provenance standard](https://thelatentreview.com/provenance/),
 shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 The software remains MIT licensed.

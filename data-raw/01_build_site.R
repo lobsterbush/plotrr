@@ -9,7 +9,7 @@ if ("License.html" %in% list.files(here::here("docs"))) {
   file.rename(here::here("docs", "License.html"), here::here("docs", "license_tmp.html"))
   file.rename(here::here("docs", "license_tmp.html"), here::here("docs", "LICENSE.html"))
 }
-pkgdown::build_reference(examples = FALSE)
+pkgdown::build_reference(examples = FALSE, lazy = FALSE)
 pkgdown::build_news()
 
 # Publish only user-facing pages; development notes remain in the repository.
