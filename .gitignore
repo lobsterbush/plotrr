@@ -6,3 +6,6 @@ inst/doc
 *.tar.gz
 *.Rcheck/
 CRAN-SUBMISSION
+
+# Locally rendered documentation
+docs/

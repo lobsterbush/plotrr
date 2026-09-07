@@ -1,9 +1,11 @@
+[![plotrr: Human > AI 👤>🤖](man/figures/provenance.svg)](https://thelatentreview.com/provenance/)
+
 [![CRAN status](https://www.r-pkg.org/badges/version/plotrr)](https://CRAN.R-project.org/package=plotrr)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/grand-total/plotrr)](https://CRAN.R-project.org/package=plotrr)
 [![DOI](https://zenodo.org/badge/80883292.svg)](https://zenodo.org/badge/latestdoi/80883292)
 [![JOSS](https://joss.theoj.org/papers/10.21105/joss.00190/status.svg)](https://doi.org/10.21105/joss.00190)
 
-# plotrr: Functions for Making Visual Exploratory Data Analysis with Nested Data Easier.
+# plotrr: Functions for making visual exploratory data analysis with nested data easier
 
 Social scientists can improve their research by conducting exploratory data analysis (EDA) (Tukey 1977). The benefits of EDA include: ''maximiz[ing] insight into a data set; uncover[ing] underlying structure; extract[ing] important variables; detect[ing] outliers and anomalies; test[ing] underlying assumptions; develop[ing] parsimonious models; and determin[ing] optimal factor settings'' (NIST/SEMATECH 2012). Despite these benefits, scholars infrequently conduct EDA. One possible explanation for this is because it takes additional time to do so; it is often easier to move straight to confirmatory analysis.  
 
@@ -29,11 +31,11 @@ Or install the development version from GitHub:
 
 ```r
 if (!require("remotes")) install.packages("remotes")
-remotes::install_github("cdcrabtree/plotrr")
+remotes::install_github("lobsterbush/plotrr")
 ```
 
 ## Support or Contact
-Please use the [issue tracker](https://github.com/cdcrabtree/plotrr/issues) for problems, questions, or feature requests. If you would rather email with questions or comments, you can contact [Charles Crabtree](mailto:charles.crabtree@monash.edu).
+Please use the [issue tracker](https://github.com/lobsterbush/plotrr/issues) for problems, questions, or feature requests. If you would rather email with questions or comments, you can contact [Charles Crabtree](mailto:charles.crabtree@monash.edu).
 
 If you would like to contribute to the package, that is great! We welcome pull requests and new developers.
 
@@ -45,3 +47,27 @@ Thanks to [Karl Broman](https://github.com/kbroman) and [Hadley Wickham](https:/
 
 ### References
 - Trochim, William M. K., and James P. Donnelly. 2008. _Research Methods Knowledge Base_. New York, NY: Cengage Learning.
+
+
+## Documentation and provenance
+
+Browse the [documentation and function reference](https://lobsterbush.github.io/plotrr/).
+
+**Human > AI 👤>🤖** — declared by Charles Crabtree: human led, with meaningful
+AI contributions to the work and ideas. This declaration covers the package
+and its documentation; the documentation build used OpenAI Codex.
+The label follows [The Latent Review’s provenance standard](https://thelatentreview.com/provenance/),
+shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+The software remains MIT licensed.
+
+## Build the documentation
+
+Install R and the package dependencies listed in `DESCRIPTION`, then install
+`pkgdown` and `here`. From the repository root, run:
+
+```r
+source(here::here("data-raw", "01_build_site.R"))
+```
+
+The site is built locally in `docs/`. Publish the rendered contents to the
+`gh-pages` branch; GitHub Pages serves that branch. No Actions workflow is needed.

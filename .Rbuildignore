@@ -12,3 +12,7 @@
 ^WARP\.md$
 ^CRAN-SUBMISSION$
 ^\.github$
+^_pkgdown\.yml$
+^pkgdown$
+^docs$
+^data-raw$

@@ -19,5 +19,5 @@ RoxygenNote: 7.3.3
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr
-URL: https://github.com/lobsterbush/plotrr
+URL: https://lobsterbush.github.io/plotrr/, https://github.com/lobsterbush/plotrr
 BugReports: https://github.com/lobsterbush/plotrr/issues
