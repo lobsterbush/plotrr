@@ -5,7 +5,9 @@
 [![DOI](https://zenodo.org/badge/80883292.svg)](https://zenodo.org/badge/latestdoi/80883292)
 [![JOSS](https://joss.theoj.org/papers/10.21105/joss.00190/status.svg)](https://doi.org/10.21105/joss.00190)
 
-# plotrr: Functions for making visual exploratory data analysis with nested data easier
+# plotrr: Functions for making visual exploratory data analysis with nested data easier <a href="https://lobsterbush.github.io/plotrr/"><img src="man/figures/logo.png" align="right" width="140" alt="plotrr hex sticker" /></a>
+
+[Package documentation](https://lobsterbush.github.io/plotrr/) · [Function reference](https://lobsterbush.github.io/plotrr/reference/index.html)
 
 Social scientists can improve their research by conducting exploratory data analysis (EDA) (Tukey 1977). The benefits of EDA include: ''maximiz[ing] insight into a data set; uncover[ing] underlying structure; extract[ing] important variables; detect[ing] outliers and anomalies; test[ing] underlying assumptions; develop[ing] parsimonious models; and determin[ing] optimal factor settings'' (NIST/SEMATECH 2012). Despite these benefits, scholars infrequently conduct EDA. One possible explanation for this is because it takes additional time to do so; it is often easier to move straight to confirmatory analysis.  
 
