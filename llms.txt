@@ -1,0 +1,98 @@
+# plotrr
+
+Research software · R package
+
+Look within groups.
+
+We built plotrr to help inspect relationships within groups before
+fitting a model to the pooled data.
+
+[Get started ↗](#quick-start)[See the functions
+→](https://lobsterbush.github.io/plotrr/reference/index.md)
+
+Charles Crabtree and Michael J. Nelson
+
+[![plotrr: Human – AI (editor)
+👤✏️🤖](reference/figures/provenance.svg)](https://thelatentreview.com/provenance/)
+
+**Initial versions: entirely human-created.** AI was used only for later
+updates and code fixes.
+
+## Quick start
+
+``` r
+install.packages("plotrr")
+library(plotrr)
+
+# One bivariate plot for each cylinder group.
+bivarplots("wt", "mpg", "cyl", mtcars)
+```
+
+For the development version, use
+`remotes::install_github("lobsterbush/plotrr")`.
+
+## Explore within groups
+
+A relationship in the whole sample can look different within a country
+or school. We use these plots to see which groups follow the pattern and
+which ones need a closer look.
+
+| Task | Function |
+|----|----|
+| Compare two measures within each group | [`bivarplots()`](https://lobsterbush.github.io/plotrr/reference/bivarplots.md) |
+| Inspect distributions as histograms | [`histplots()`](https://lobsterbush.github.io/plotrr/reference/histplots.md) |
+| Compare distributions as violins | [`violinplots()`](https://lobsterbush.github.io/plotrr/reference/violinplots.md) |
+| Make group-specific dot plots | [`dotplots()`](https://lobsterbush.github.io/plotrr/reference/dotplots.md) |
+| Plot a relationship with marginal rugs | [`bivarrugplot()`](https://lobsterbush.github.io/plotrr/reference/bivarrugplot.md) |
+
+Pass column names as strings and supply a data frame. Functions that
+produce several plots print each plot in turn; consult the reference for
+each signature.
+
+## Provenance
+
+**Human – AI (editor) 👤✏️🤖**
+
+We wrote every initial version ourselves, without AI. We’ve used AI only
+for later updates and code fixes. I’m Charles Crabtree, and this is my
+account of how the package was made.
+
+The label and mark follow [The Latent Review’s provenance
+standard](https://thelatentreview.com/provenance/), shared under [CC BY
+4.0](https://creativecommons.org/licenses/by/4.0/). The software remains
+MIT licensed.
+
+## Help and development
+
+If something isn’t working, please tell us in the [issue
+tracker](https://github.com/lobsterbush/plotrr/issues). The [source and
+README](https://github.com/lobsterbush/plotrr) include installation
+requirements and local documentation build instructions.
+
+# Package index
+
+## All functions
+
+- [`bivarplots()`](https://lobsterbush.github.io/plotrr/reference/bivarplots.md)
+  : Plot two variables within each group
+- [`bivarrugplot()`](https://lobsterbush.github.io/plotrr/reference/bivarrugplot.md)
+  : Draw a scatterplot with marginal rugs
+- [`clear()`](https://lobsterbush.github.io/plotrr/reference/clear.md) :
+  Clear the console display
+- [`dotplots()`](https://lobsterbush.github.io/plotrr/reference/dotplots.md)
+  : Draw a dot plot for each group
+- [`histplots()`](https://lobsterbush.github.io/plotrr/reference/histplots.md)
+  : Draw a histogram for each group
+- [`lengthunique()`](https://lobsterbush.github.io/plotrr/reference/lengthunique.md)
+  : Count distinct non-missing values
+- [`makefacnum()`](https://lobsterbush.github.io/plotrr/reference/makefacnum.md)
+  : Convert numeric factor labels to numbers
+- [`violinplots()`](https://lobsterbush.github.io/plotrr/reference/violinplots.md)
+  : Draw violin plots within each group
+
+# Articles
+
+### All vignettes
+
+- [Exploring relationships within
+  groups](https://lobsterbush.github.io/plotrr/articles/plotrr-vignette.md):
